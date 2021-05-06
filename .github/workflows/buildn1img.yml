@@ -44,7 +44,7 @@ jobs:
     - name: Download
       run: |
         cd /opt/openwrt        
-        wget  https://www.dropbox.com/s/pof6o3vogv7opl1/openwrt-armvirt-64-default-rootfs.tar.gz?dl=0  
+        wget   https://www.dropbox.com/s/yj1vba56m7jf741/openwrt-armvirt-64-default-rootfs.tar.gz?dl=0
         mv 'openwrt-armvirt-64-default-rootfs.tar.gz?dl=0' openwrt-armvirt-64-default-rootfs.tar.gz
         cd /opt/kernel
         wget $(curl -s https://api.github.com/repos/mingxiaoyu/armbian_flippy/releases/tags/v${FLIPPY_VERSION} | grep browser_download_url | cut -d '"' -f 4)
